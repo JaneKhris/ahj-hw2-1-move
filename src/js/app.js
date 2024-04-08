@@ -1,6 +1,8 @@
 let activeHole = 1;
 
-function getHole(index) { document.getElementById(`hole${index}`); }
+function getHole(index) {
+  return document.getElementById(`hole${index}`);
+}
 
 function deactivateHole(index) { getHole(index).className = 'hole'; }
 
